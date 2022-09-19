@@ -347,6 +347,12 @@ if (isset($_POST['send'])) {
          <input type="submit" data-aos="zoom-in" value="Send message" name="send" class="btn">
       </form>
 
+      <h1 class="heading" data-aos="fade-up"> <span>Send Msg WhatsApp</span> </h1>
+       <section  action="" method="post">
+         <button type="button" onclick="window.location.href='./msg.html'" class="btn">SEND WHATSAPP</button>
+       
+      </section>
+<!-- ================================== -->
       <div class="box-container">
 
          <div class="box" data-aos="zoom-in">

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>WhatsApp Messages</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+        * {
+            font-family: "Roboto Mono", monospace;
+        }
+
+        body {
+            margin-top: 4%;
+        }
+
+
+        .content {
+            max-width: 500px;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            padding: 10px;
+
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+
+        }
+
+        .text {
+
+            border: 2px SOLID;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+
+        }
+
+        .btn {
+            background: #5ad367;
+            box-shadow: 0 5px #ebebeb;
+            width: 201px;
+            height: 54px;
+            font-size: 1.5rem;
+            color: #000000;
+            text-align: center;
+            border: none;
+        }
+
+        .int {
+            white-space: pre;
+            width: 270px;
+            height: 29px;
+            max-width: 500px;
+            border: 2px SOLID;
+
+        }
+    </style>
+</head>
+
+<body >
+    <div data-aos="fade-up" >
+        <img class="center" 
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhr_IzA1B7kNmiT61wOlJVUr660svoWLbTNTT6YaoZkPiDxXiPbUMA0OwEtoZMXeMItTrL4c_8JtAWg1W0KL853vDwpxcDk5ZIPFE8uZwbHVGRrY74RF8KaBsixDCrqDIWptXXFCQFxAHxMAiYYMrF098e6jlxycMez79zThdiWVxnXQRHgPOea6A9K=s393"
+            width="200"
+            alt="https://blogger.googleusercontent.com/img/a/AVvXsEhr_IzA1B7kNmiT61wOlJVUr660svoWLbTNTT6YaoZkPiDxXiPbUMA0OwEtoZMXeMItTrL4c_8JtAWg1W0KL853vDwpxcDk5ZIPFE8uZwbHVGRrY74RF8KaBsixDCrqDIWptXXFCQFxAHxMAiYYMrF098e6jlxycMez79zThdiWVxnXQRHgPOea6A9K=s393">
+        <h2 class="" style="text-align: center">Messages WhatsApp</h2>
+        <input class="int center" placeholder=" Enter your name" type="text" id="name">
+        <textarea class="text center" placeholder=" Enter your message" id="text" name="" cols="35" rows="8"></textarea>
+        <input onclick="send()" data-aos="zoom-in" class="btn center aos-init aos-animate" type="button" value="SEND">
+    </div>
+
+    <script>
+        function send() {
+            let name = document.getElementById("name").value;
+            let text = document.getElementById("text").value;
+            window.location.href = "https://wa.me/+212711258553?text=" + " Client : " + name + '\n' + " Messages : " + '\n'  + text+ '.' ;
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
