@@ -64,7 +64,7 @@ if (isset($_POST['send'])) {
 
       <div id="menu-btn" class="fas fa-bars"></div>
 
-      <a href="#home" class="logo">Portfolio</a>
+      <a href="#home" class="logo"> Portfolio</a>
 
       <nav class="navbar">
          <a href="#home" class="active">Home</a>
